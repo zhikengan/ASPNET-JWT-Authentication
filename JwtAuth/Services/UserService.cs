@@ -14,10 +14,7 @@ namespace JwtAuth.Services
         {
             return await _userRepo.GetUserByIdAsync(userId);
         }
-        public async Task<IEnumerable<AppUser>> GetAllUsersAsync()
-        {
-            return await _userRepo.GetAllUsersAsync();
-        }
+
         public async Task<bool> DeleteUserAsync(int userId)
         {
             return await _userRepo.DeleteUserAsync(userId);
